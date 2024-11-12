@@ -1,0 +1,8 @@
+python-telegram-bot==20.0
+lncrawl
+logging
+gunicorn
+shutil
+os
+re
+urllib3
