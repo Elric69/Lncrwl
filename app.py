@@ -3,7 +3,7 @@ import os
 import re
 import shutil
 from urllib.parse import urlparse
-
+from keep_alive import keep_alive
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update
 from telegram.ext import (Application, CommandHandler, ContextTypes,
                           ConversationHandler, Job, MessageHandler, filters)
@@ -14,6 +14,7 @@ from lncrawl.utils.uploader import upload
 
 logger = logging.getLogger(__name__)
 
+keep_alive()
 
 available_formats = [
     "epub",
